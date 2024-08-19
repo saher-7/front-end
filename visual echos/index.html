@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Echos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Visual Echos</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <ul class="nav-list">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#albums">ALBUMS</a></li>
+                <li><a href="#galleries">GALLERIES</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#book" class="cta">BOOK NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero" id="home">
+            <h1>Where Every Frame Tells a Tale</h1>
+            <p>Casually capturing lights, laughter and moments</p>
+            <button>Find More</button>
+        </section>
+
+        <section class="albums" id="albums">
+            <h2>Our Albums</h2>
+            <h2 class="subheading">Faces of Emotion: Capturing the Soul Behind Every Glance</h2>
+            <div class="masonry">
+                <div class="item">
+                    <img src="9.jpg" alt="Album 1">
+                    <div class="overlay">
+                        <p>This album explores the art of portraiture, showcasing the raw and unfiltered expressions that define individuality and tell a thousand stories.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="8.jpg" alt="Album 2">
+                    <div class="overlay">
+                        <p>Dive into a series of intimate portraits that highlight the connections we share, freezing moments of vulnerability and strength in time.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="6.jpg" alt="Album 3">
+                    <div class="overlay">
+                        <p>Each smile, each gaze, tells a unique story—this collection brings those stories to life, capturing the beauty and complexity of human expression</p>
+                    </div>
+                </div>
+                <!-- Add more album items here -->
+            </div>
+        </section>
+        
+        <section class="gallery" id="galleries">
+            <h2>Our Gallery</h2>
+            <p class="fancy-text">
+                Street photography offers a rich tapestry of experiences, from capturing fleeting moments in bustling city streets to finding stillness in the midst of chaos. Each photograph tells a unique story, whether it’s the candid expression of a passerby, the interplay of light and shadow on an old building, or the unexpected beauty in everyday scenes. The thrill lies in the spontaneity—never knowing what you’ll encounter, yet always ready to freeze a moment in time. Street photography invites you to see the world with fresh eyes, noticing details that often go overlooked, and finding art in the ordinary.
+            </p>
+            <div class="grid">
+                <div class="grid-item"><img src="14.jpg" alt="Gallery Image 1"></div>
+                <div class="grid-item"><img src="15.jpg" alt="Gallery Image 2"></div>
+                <div class="grid-item"><img src="11.jpg" alt="Gallery Image 3"></div>
+                <div class="grid-item"><img src="10.jpg" alt="Gallery Image 4"></div>
+                <div class="grid-item"><img src="12.jpg" alt="Gallery Image 5"></div>
+                <div class="grid-item"><img src="13.jpg" alt="Gallery Image 6"></div>
+                <div class="grid-item"><img src="16.jpg" alt="Gallery Image 7"></div>
+                <div class="grid-item"><img src="17.jpg" alt="Gallery Image 8"></div>
+                <div class="grid-item"><img src="18.jpg" alt="Gallery Image 9"></div>
+                <div class="grid-item"><img src="19.jpg" alt="Gallery Image 10"></div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+<section class="blog-section" id="blog">
+    <div class="blog-container">
+        <h2 class="blog-title">Our Blog</h2>
+        <div class="blog-content">
+            <div class="blog-image-container">
+                <img src="22.jpg" alt="Street Photography" class="blog-image">
+            </div>
+            <div class="blog-text-container">
+                <p class="blog-description">Welcome to our street photography blog, where the city’s pulse comes alive through the lens. Here, we explore the art of capturing candid moments that tell compelling stories. Street photography is not just about the photos; it's about the experience, the adventure, and the unexpected encounters along the way. Each post will take you behind the scenes of my urban explorations, sharing the techniques, challenges, and inspirations that shape every shot.
+
+                    From the bustling markets and quiet alleyways to the diverse faces and hidden stories, this blog aims to inspire and educate both budding photographers and seasoned professionals. You’ll find in-depth discussions on camera settings, composition tips, and the ethics of photographing strangers. We'll also dive into personal anecdotes and reflections on the moments that made a lasting impact. Join me as we navigate the streets, uncover the magic in the mundane, and celebrate the artistry of capturing life in its most authentic form. Whether you're here to learn or simply to enjoy, I hope this space resonates with your passion for the spontaneous and the beautiful.</p>
+                <a href="#" class="blog-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section class="book" id="book">
+            <h2>Book Now</h2>
+            <form action="#" method="post">
+                <label for="booking-name">Name:</label>
+                <input type="text" id="booking-name" name="booking-name" required>
+                <label for="booking-email">Email:</label>
+                <input type="email" id="booking-email" name="booking-email" required>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4"></textarea>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <!-- Add social media icons here -->
+        </div>
+    </footer>
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>
